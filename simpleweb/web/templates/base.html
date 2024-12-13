@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web🪔</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>we<i class="bi bi-heart-half" style="font-size: 17px"></i></h1>
+      </div>
+      <div class="nav">
+        <a href="http://">Share your work</a>
+        <a href="http://">Resources <span style="color: grey">37</span></a>
+        <a href="http://">About us</a>
+        <a href="http://">FAQ</a>
+        <a href="http://">Icons <span>NEW</span></a>
+      </div>
+      <div class="submit">
+        <button type="submit">Submit</button>
+      </div>
+    </header>
+
+    <main>{% block main %} {% endblock main %}</main>
+    <footer>{% block footer %} {% endblock footer %}</footer>
+  </body>
+</html>
